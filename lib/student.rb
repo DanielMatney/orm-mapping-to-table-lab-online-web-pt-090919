@@ -39,7 +39,7 @@ class Student
   end
   
   def self.create(student)
-    Student.new(student)
+    student.each {|key, value| self.send(("#{key}="), value)}
   end
   
 end
