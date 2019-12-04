@@ -24,8 +24,7 @@ class Student
   
   def self.drop_table
     sql = <<-SQL
-      INSERT INTO songs (name, grade) 
-      VALUES (?, ?)
+      
     SQL
     DB[:conn].execute(sql)
  
